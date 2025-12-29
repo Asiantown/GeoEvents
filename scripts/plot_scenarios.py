@@ -20,11 +20,6 @@ def parse_args() -> argparse.Namespace:
         default="Patrol coverage and resource utilization",
         help="Figure subtitle",
     )
-    parser.add_argument(
-        "--source",
-        default="Source: GeoEvents simulation outputs",
-        help="Source note displayed under the chart",
-    )
     return parser.parse_args()
 
 
@@ -37,7 +32,7 @@ def load_summary(path: str):
     return rows
 
 
-def plot(rows, output_path: str, title: str, subtitle: str, source: str) -> None:
+def plot(rows, output_path: str, title: str, subtitle: str) -> None:
     scenarios = [row["scenario"] for row in rows]
     coverage = [float(row["risk_coverage_ratio"]) * 100 for row in rows]
     total_weight = [float(row["total_weight"]) for row in rows]
@@ -154,16 +149,6 @@ def plot(rows, output_path: str, title: str, subtitle: str, source: str) -> None
     )
     fig.update_xaxes(showline=False, showgrid=False, row=1, col=2)
 
-    fig.add_annotation(
-        text=source,
-        showarrow=False,
-        xref="paper",
-        yref="paper",
-        x=0,
-        y=-0.12,
-        font=dict(size=12, color="#4D5358"),
-    )
-
     Path(output_path).parent.mkdir(parents=True, exist_ok=True)
     fig.write_image(output_path, scale=1)
 
@@ -171,7 +156,7 @@ def plot(rows, output_path: str, title: str, subtitle: str, source: str) -> None
 def main() -> None:
     args = parse_args()
     rows = load_summary(args.summary)
-    plot(rows, args.output, args.title, args.subtitle, args.source)
+    plot(rows, args.output, args.title, args.subtitle)
 
 
 if __name__ == "__main__":
