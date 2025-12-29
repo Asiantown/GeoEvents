@@ -1,0 +1,4 @@
+[
+  {"boat_id": "Alpha", "base_lat": 0.0, "base_lon": 0.0, "speed_mps": 5.0, "shift_limit": 3600, "detect_buffer": 120},
+  {"boat_id": "Bravo", "base_lat": 0.02, "base_lon": -0.01, "speed_mps": 5.5, "shift_limit": 5400}
+]

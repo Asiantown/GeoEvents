@@ -1,0 +1,5 @@
+[
+  {"name": "baseline", "risk_scale": 1.0, "boat_multiplier": 1.0},
+  {"name": "high_risk", "risk_scale": 1.5, "boat_multiplier": 1.0},
+  {"name": "extended_shift", "risk_scale": 1.0, "boat_multiplier": 1.5}
+]

@@ -99,6 +99,7 @@ def write_events(events: Sequence[StationaryEvent], path: str | None) -> None:
         "num_points",
         "source_track_id",
         "quality_flag",
+        "risk",
     ]
     dest = sys.stdout if not path else open(path, "w", newline="", encoding="utf-8")
     close_after = dest is not sys.stdout
@@ -118,6 +119,7 @@ def write_events(events: Sequence[StationaryEvent], path: str | None) -> None:
                     "num_points": event.num_points,
                     "source_track_id": event.source_track_id or "",
                     "quality_flag": event.quality_flag,
+                    "risk": event.risk,
                 }
             )
     finally:

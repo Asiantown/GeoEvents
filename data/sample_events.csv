@@ -1,0 +1,4 @@
+event_id,start_time,end_time,duration_sec,centroid_lat,centroid_lon,drift_radius_m,num_points,source_track_id,quality_flag,risk
+1,0.0,600.0,600.0,0.0,0.0,50,12,v1,good,1.0
+2,1200.0,1800.0,600.0,0.01,0.01,80,10,v2,good,1.5
+3,2000.0,2600.0,600.0,0.02,-0.01,60,11,v1,sparse,0.8

@@ -38,6 +38,7 @@ class StationaryEvent:
     num_points: int
     source_track_id: str | None = None
     quality_flag: str = "good"
+    risk: float = 1.0
 
 
 def extract_events(
