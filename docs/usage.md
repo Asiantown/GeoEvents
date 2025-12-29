@@ -29,7 +29,10 @@ The output CSV lists each boat, the event IDs covered (semicolon-separated), tot
 - `python3 -m compileall src scripts` — quick syntax check
 - `./scripts/extract_events.py ...` with `--time-threshold` / `--distance-threshold` variations to sanity-check event counts
 - `./scripts/assign_patrols.py sample/events.csv sample/boats.json` for heuristic smoke tests
+- `./scripts/run_scenarios.py ...` to sweep scenario configs and log KPIs
+- `./scripts/plot_scenarios.py --summary results/...csv --output results/...png` (requires `matplotlib`, install with `python3 -m pip install --user matplotlib`)
 
 ## 4. Next steps
 - Plug the assignments into the simulation framework (`docs/simulation_plan.md`) to sweep patrol budgets and thresholds.
 - Integrate metrics into the project write-up outline (`docs/writeup_outline.md`).
+- Use `scripts/generate_synthetic_events.py` to create reproducible multi-vessel event sets for richer experiments.
