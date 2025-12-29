@@ -56,4 +56,4 @@ Optimization-focused toolkit for transforming GPS tracks into stationary events,
 - Sample CLI invocations above; see `docs/usage.md` for more.
 
 ## Next Steps
-Future improvements (see `docs/next_steps.md`): richer scenario sweeps, MILP-informed heuristics, and report generation.
+Future improvements include richer scenario sweeps, MILP-informed heuristics, and report generation; see `docs/results_discussion.md` and `docs/milp_notes.md` for guidance.
