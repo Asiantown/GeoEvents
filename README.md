@@ -2,6 +2,8 @@
 
 Optimization-focused toolkit for transforming GPS tracks into stationary events, allocating limited patrol resources, and analyzing scenario tradeoffs.
 
+**In plain English**: take a bunch of GPS dots, find where boats stop for a while, and decide which stops your limited patrol boats should actually visit so you catch more bad behavior without burning extra fuel.
+
 ## Components
 - `src/stationary_events.py`: event extraction logic (centroid, duration, drift radius, risk).
 - `scripts/extract_events.py`: CLI to convert `lat lon time` tracks into event CSVs.
