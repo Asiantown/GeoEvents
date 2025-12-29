@@ -13,7 +13,7 @@
 | high_risk      | 8 / 30         | 43                | 42           | 65           |
 | extended_shift | 9 / 30         | 43                | 28           | 44           |
 
-- **Insight**: Extending shift budgets had a larger effect on coverage than inflating risk scores—boats gained the flexibility to chase more distant hotspots without increasing fleet size.
+- **Insight**: Extending shift budgets had a larger effect on coverage than inflating risk scores - boats gained the flexibility to chase more distant hotspots without increasing fleet size.
 
 ## Visualization
 - `results/synth_summary.png` plots risk coverage (bar) and total weight/utilization (line + bar) for each scenario.

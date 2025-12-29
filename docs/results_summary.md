@@ -10,7 +10,7 @@ Using `data/synth_events.csv` (6 vessels × 5 events each):
 
 Key takeaways:
 - Even simple heuristics exhibit clear diminishing returns: extending shifts produced a bigger coverage jump than uniformly inflating risk scores.
-- Hotspot clustering drives boat utilization >40% despite only two vessels—adding a third boat or redistributing base locations would likely yield >70% risk coverage.
+- Hotspot clustering drives boat utilization >40% despite only two vessels - adding a third boat or redistributing base locations would likely yield >70% risk coverage.
 
 Next steps:
 1. Expand scenario grid (vary boat counts, base placements). 

@@ -19,4 +19,4 @@
    - For each boat, report the ordered event IDs, total covered weight, time used, and utilization = `time_used / shift_limit`.
    - Aggregate KPIs: total risk covered, per-boat utilization, unserved high-risk events (for sensitivity analysis).
 
-This heuristic is intentionally simple (no MILP solver required) yet encodes key OR elements—resource limits, time windows, and prioritization by value. It serves as a baseline before exploring more advanced interval-scheduling or set-cover formulations.
+This heuristic is intentionally simple (no MILP solver required) yet encodes key OR elements - resource limits, time windows, and prioritization by value. It serves as a baseline before exploring more advanced interval-scheduling or set-cover formulations.

@@ -26,7 +26,7 @@ Run the allocator:
 The output CSV lists each boat, the event IDs covered (semicolon-separated), total covered weight (`risk * duration`), utilization fraction, and total mission time used.
 
 ## 3. Testing shortcuts
-- `python3 -m compileall src scripts` — quick syntax check
+- `python3 -m compileall src scripts`  -  quick syntax check
 - `./scripts/extract_events.py ...` with `--time-threshold` / `--distance-threshold` variations to sanity-check event counts
 - `./scripts/assign_patrols.py sample/events.csv sample/boats.json` for heuristic smoke tests
 - `./scripts/run_scenarios.py ...` to sweep scenario configs and log KPIs
